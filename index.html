@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Axios</title>
+  </head>
+  <body>
+    <div id="dados"></div>
+
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+    <form id="frm">
+      Nome: <input id="nomeUsuario" type="text" name="nome" /><br />
+      E-mail: <input id="emailUsuario" type="email" name="email" /><br />
+      Senha:
+      <input id="senhaUsuario" type="password" name="lname" /><br /><br />
+      <input type="button" onclick="salvarUsuario()" value="Submit" />
+    </form>
+
+    <div id="dadosUser"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
